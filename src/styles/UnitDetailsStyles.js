@@ -54,4 +54,23 @@ export const styles = StyleSheet.create({
   textTabActive: {
     color: Colors.TEXT,
   },
+  button: {
+    backgroundColor: '#f7f7f7',
+    marginVertical: 10,
+    height: 50,
+    width: Dimensions.get('window').width - 50,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: Colors.GRAY,
+    shadowOffset: {width: 1, height: 1},
+    shadowOpacity: 10,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  btnText: {
+    fontSize: 16,
+    color: Colors.TEXT,
+    marginRight: 10,
+  },
 })

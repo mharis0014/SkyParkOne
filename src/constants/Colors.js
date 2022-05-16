@@ -7,7 +7,7 @@ const LIGHT_GRAY = '#E4E4E4'
 const DARK_GRAY = '#F4F5F9'
 const TEXT = '#221F1F'
 const TEXT_LIGHT = '#969BA0'
-const LIGHT_GREEN = '#00da34'
+const LIGHT_GREEN = '#8CC540'
 const WHITE = '#FFFFFF'
 
 export default {

@@ -1,11 +1,21 @@
 import React, {useState} from 'react'
-import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native'
+import {
+  View,
+  Text,
+  SafeAreaView,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import * as Progress from 'react-native-progress'
 
 import {myUnitDetailsTab} from '../../constants/Utils'
 import {styles} from '../../styles/UnitDetailsStyles'
+import CustomButton from './components/CustomButton'
 import UnitDetails from './components/UnitDetails'
 import Payment from './components/Payment'
 import Header from '../../components/Header'
+import Colors from '../../constants/Colors'
 
 const MyUnitDetails = ({navigation}) => {
   const {
@@ -74,6 +84,18 @@ const MyUnitDetails = ({navigation}) => {
           heading={'Total Left'}
           value={'63 lac, 48 thousand, 2 hundred and 50 rs'}
         />
+      </View>
+      <View style={{alignSelf: 'center'}}>
+        <Progress.Bar
+          color={Colors.LIGHT_GREEN}
+          unfilledColor={Colors.LIGHT_GRAY}
+          borderWidth={0}
+          height={50}
+          progress={0.3}
+          width={Dimensions.get('window').width - 50}
+        />
+        <CustomButton btnText={'View Payment Plan'} />
+        <CustomButton btnText={'View Paid Installments'} />
       </View>
     </SafeAreaView>
   )

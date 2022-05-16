@@ -26,13 +26,6 @@ import {styles} from '../../styles/OverviewStyles'
 const Overview = ({navigation}) => {
   const {container, priceSection} = styles
 
-  // const ItemRender = ({img, date}) => (
-  //   <View>
-  //     <Text style={{color: Colors.BLACK}}>{date}</Text>
-  //     <Image source={img} style={{width: 200, height: 120}} />
-  //   </View>
-  // )
-
   return (
     <SafeAreaView style={container}>
       <Header />
@@ -68,17 +61,6 @@ const Overview = ({navigation}) => {
             isAnimated
           />
         </View>
-        {/* <View style={{height: 600, width: '100%'}}>
-          <FlatList
-            horizontal
-            scrollEnabled={true}
-            data={constructionProgress}
-            keyExtractor={(item, index) => index}
-            renderItem={({item}) => (
-              <ItemRender img={item.img} date={item.date} />
-            )}
-          />
-        </View> */}
       </View>
     </SafeAreaView>
   )
